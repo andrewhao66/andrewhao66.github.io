@@ -1,0 +1,56 @@
+#自介 {
+    color:blue
+}
+
+h1 {
+    color: chocolate;
+}
+
+h2 {
+    color: cadetblue;
+    -webkit-text-stroke: 1px #ffffff;
+}
+
+button {
+    background-color: #f2c2d2;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color .3s;
+    position: relative;
+    overflow: hidden
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: #ff6b81;
+    top: 0;
+    left: 0;
+    transition: width .3s ease-in-out;
+    transform: skewX(-45deg);
+    transform-origin: left
+}
+
+button:hover {
+    background-color: #e57373;
+    color: #fff
+}
+
+body {
+    background-image: url(img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: arial,sans-serif;
+    margin: 0;
+    padding: 0
+}
